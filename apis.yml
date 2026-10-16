@@ -1,23 +1,111 @@
 aid: axflow
+
 name: Axflow
-description: 'Axflow is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://axflow.dev/OG.png
+
+description: Axflow provides AI tooling for the future, offering a platform that integrates large language models, agents, and AI-driven workflows.
+  The service focuses on enabling developers and enterprises to build, deploy, and manage AI-powered applications with ease, featuring customizable
+  pipelines, tool integrations, and collaborative features.
+
 url: https://raw.githubusercontent.com/api-evangelist/axflow/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-16 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-16'
+
 modified: '2026-10-16'
+
 tags:
 - Company
-apis: []
+- AI
+- Tooling
+- Platform
+- LLM
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Spectral
+  url: rules/axflow-rules.yml
+- type: JSONLD
+  url: json-ld/axflow-context.jsonld
+- type: Vocabulary
+  url: vocabulary/axflow-vocabulary.yml
+- type: DataModel
+  url: data-model/axflow-data-model.yml
+- type: Conformance
+  url: conformance/axflow-conformance.yml
+- type: Hosts
+  url: hosts/axflow-hosts.yml
+- type: Vendors
+  url: vendors/axflow-vendors.yml
+- type: SDKs
+  url: packages/axflow-packages.yml
+- type: Packages
+  url: packages/axflow-packages.yml
+- type: GitHubOrganization
+  url: https://github.com/axflow
+- type: DomainSecurity
+  url: security/axflow-domain-security.yml
 - type: Website
   url: https://axflow.dev/
+- type: DeveloperPortal
+  url: https://studio.axflow.dev
+- type: Documentation
+  url: https://studio.axflow.dev
+- type: Blog
+  url: https://axflow.dev/blog/
+- type: SignUp
+  url: https://studio.axflow.dev
+
+apis:
+- name: Axflow API
+  description: 'The Axflow platform provides AI tooling and workflow APIs as documented. '
+  humanURL: https://docs.axflow.dev/
+  baseURL: null
+  aid: axflow:axflow-api-2
+- aid: axflow:axflow-api
+  name: Axflow API
+  description: 'Axflow API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-16); not
+
+    the provider''s own document.'
+  humanURL: https://docs.axflow.dev/documentation/models.html
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/axflow-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/axflow-post-api-openai-chat-request-schema.json
+  - type: JSONSchema
+    url: json-schema/axflow-post-api-chat-response-schema.json
+  - type: JSONSchema
+    url: json-schema/axflow-post-api-openai-chat-response-schema.json
+  - type: JSONSchema
+    url: json-schema/axflow-post-api-chat-request-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation site renders via JavaScript, preventing machine‑readable spec discovery.
+  evidence:
+  - url: https://docs.axflow.dev/
+    status: 200
+  checked: '2026-10-16'
+x-enrichment:
+  date: '2026-10-16'
+  status: enriched
+  artifacts_added: 16
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

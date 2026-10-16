@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/axflow/main/json-schema/axflow-post-api-chat-response-schema.json",
+  "title": "PostApiChatResponse",
+  "x-generated": "2026-10-16",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/axflow-openapi-generated.yml#/components/schemas/PostApiChatResponse",
+  "type": "object",
+  "properties": {
+    "stream": {
+      "type": "string",
+      "description": "Newline‑delimited JSON stream of tokens from OpenAI"
+    }
+  }
+}

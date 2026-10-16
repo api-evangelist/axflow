@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "@vocab": "https://axflow.dev/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "axflow": "https://axflow.dev/schema#",
+    "PostApiChatRequest": "axflow:PostApiChatRequest",
+    "query": {
+      "@id": "axflow:query",
+      "@type": "xsd:string"
+    },
+    "PostApiChatResponse": "axflow:PostApiChatResponse",
+    "stream": {
+      "@id": "axflow:stream",
+      "@type": "xsd:string"
+    },
+    "PostApiOpenaiChatRequest": "axflow:PostApiOpenaiChatRequest",
+    "chatRequest": {
+      "@id": "axflow:chatRequest"
+    },
+    "PostApiOpenaiChatResponse": "axflow:PostApiOpenaiChatResponse"
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Axflow API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Axflow's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-16) from openapi/_ae-authored/axflow-openapi-generated.yml.",
+  "dcterms:created": "2026-10-16",
+  "dcterms:source": [
+    "openapi/_ae-authored/axflow-openapi-generated.yml"
+  ]
+}

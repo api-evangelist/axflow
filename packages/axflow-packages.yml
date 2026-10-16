@@ -1,0 +1,19 @@
+generated: '2026-10-16'
+method: searched
+source: "https://registry.npmjs.org/-/v1/search?text=axflow&size=5"
+packages:
+  - name: "@axflow/models"
+    registry: "npm"
+    official: true
+    version: "0.0.25"
+    published: "2023-12-21"
+  - name: "axgen"
+    registry: "npm"
+    official: false
+    version: "0.0.23"
+    published: "2023-10-31"
+  - name: "axeval"
+    registry: "npm"
+    official: false
+    version: "0.0.10"
+    published: "2023-09-14"
