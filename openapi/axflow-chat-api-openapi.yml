@@ -1,0 +1,71 @@
+openapi: 3.2.0
+info:
+  title: Axflow Chat API
+  version: '2026-10-16'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-16: 2 operation(s) read from 5 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Axflow has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 2
+    pages-with-code: 1
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-16'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.axflow.dev/documentation/models.html
+  - https://docs.axflow.dev/guides/models/getting-started.html
+  - https://docs.axflow.dev/guides/models/streaming.html
+  - https://docs.axflow.dev/guides/models/building-client-applications.html
+  - https://docs.axflow.dev/guides/models/bring-your-own-models.html
+tags:
+- name: Chat
+paths:
+  /api/chat:
+    post:
+      operationId: post_api_chat
+      tags:
+      - Chat
+      summary: POST /api/chat
+      description: Creates a stream of tokens from OpenAIChat using the provided query and returns them as a newline‑delimited JSON streaming response.
+      x-source: https://docs.axflow.dev/guides/models/getting-started.html
+      parameters:
+      - name: query
+        in: query
+        required: true
+        schema:
+          type: string
+        description: User query sent in the request JSON body
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiChatRequest'
+      responses:
+        '201':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiChatResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    PostApiChatRequest:
+      type: object
+      properties:
+        query:
+          type: string
+          description: User query
+      required:
+      - query
+    PostApiChatResponse:
+      type: object
+      properties:
+        stream:
+          type: string
+          description: Newline‑delimited JSON stream of tokens from OpenAI

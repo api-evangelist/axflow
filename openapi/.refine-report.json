@@ -1,0 +1,23 @@
+{
+  "provider": "axflow",
+  "sources": [
+    "_ae-authored/axflow-openapi-generated.yml"
+  ],
+  "outputs": [
+    "axflow-chat-api-openapi.yml",
+    "axflow-openai-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "axflow-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "axflow-openapi-generated.yml: tagged paths POST /api/chat -> Chat",
+    "axflow-openapi-generated.yml: tagged paths POST /api/openai/chat -> Openai",
+    "axflow-openapi-generated.yml: declared missing tag: Chat",
+    "axflow-openapi-generated.yml: declared missing tag: Openai",
+    "apis.yml register: written (+2 apis, 3 total)"
+  ],
+  "skipped": []
+}
