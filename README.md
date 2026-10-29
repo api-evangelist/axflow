@@ -64,5 +64,110 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Axflow is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog) and added to the network as a stub for full-pipeline profiling.
-- https://axflow.dev/
+Axflow provides AI tooling for the future, offering a platform that integrates large language models, agents, and AI-driven workflows. The service focuses on enabling developers and enterprises to build, deploy, and manage AI-powered applications with ease, featuring customizable pipelines, tool integrations, and collaborative features.
+
+**Areas:** Company · Artificial Intelligence · Tooling · Platform · LLM
+
+## Axflow on APIs.io
+
+Everything profiled for Axflow is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/axflow/](https://apis.io/providers/axflow/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Axflow API](https://apis.io/apis/axflow/axflow-api-2/) — The Axflow platform provides AI tooling and workflow APIs as documented.
+- [Axflow Chat API](https://apis.io/apis/axflow/axflow-chat-api/) — The Chat API from Axflow — 1 operation(s) for chat.
+- [Axflow Openai API](https://apis.io/apis/axflow/axflow-openai-api/) — The Openai API from Axflow — 1 operation(s) for openai.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON Schema (4)
+
+The data models the API reads and writes.
+
+- [PostApiChatRequest](https://apis.io/schemas/axflow/axflow-post-api-chat-request/)
+- [PostApiChatResponse](https://apis.io/schemas/axflow/axflow-post-api-chat-response/)
+- [PostApiOpenaiChatRequest](https://apis.io/schemas/axflow/axflow-post-api-openai-chat-request/)
+- [PostApiOpenaiChatResponse](https://apis.io/schemas/axflow/axflow-post-api-openai-chat-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Axflow Context](https://apis.io/jsonld/axflow/axflow-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Axflow API Rules](https://apis.io/rules/axflow/axflow-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Axflow Domain Security](https://apis.io/security/axflow/axflow-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://axflow.dev/)
+- [Documentation](https://studio.axflow.dev)
+- [Sign up](https://studio.axflow.dev)
+- [Blog](https://axflow.dev/blog/)
+- [GitHub](https://github.com/axflow)
+
+## API Evangelist rating
+
+**Kin Score 21.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 19.4 |
+| Contract governance | 22.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 13.2 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/axflow/](https://apis.io/providers/axflow/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Axflow: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/axflow/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
